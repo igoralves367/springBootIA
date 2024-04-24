@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "df227b3f-9f26-4664-8ba4-24c78c46fb68",
+		"name": "Spring Boot IA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23094206"
+	},
+	"item": [
+		{
+			"name": "Pergunta Geral",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/chat/general?query=\"Monte um Roteiro para uma viagem de casal a Bariloche Argentina\"",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"general"
+					],
+					"query": [
+						{
+							"key": "query",
+							"value": "\"Monte um Roteiro para uma viagem de casal a Bariloche Argentina\""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Pergunte Sobre Tópico",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/chat/info?topic=Café",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"chat",
+						"info"
+					],
+					"query": [
+						{
+							"key": "topic",
+							"value": "Café"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
